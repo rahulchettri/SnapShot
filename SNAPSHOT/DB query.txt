@@ -1,0 +1,19 @@
+MariaDB [testing]> CREATE TABLE users (
+    ->     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    ->     username VARCHAR(50) NOT NULL UNIQUE,
+    ->     password VARCHAR(255) NOT NULL,
+    ->     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    -> );
+Query OK, 0 rows affected (0.473 sec)
+
+
+> insert into users(username,password) values("Rahul","login123");
+
+
+CREATE TABLE FILE (
+     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+     filepath VARCHAR(500) NOT NULL ,
+ 
+       created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    );
+	
